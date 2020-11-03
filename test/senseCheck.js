@@ -6,3 +6,5 @@ describe('Sense-check', function() {
     expect(false).to.be.false;
   })
 })
+
+// For testing async code, see https://mochajs.org/#asynchronous-code
