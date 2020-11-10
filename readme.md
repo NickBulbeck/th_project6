@@ -1,1 +1,3 @@
 Dummy change...
+
+An interesting possibility is the use of the window.history object - it has a back() method, a go() method, a forward() method and much else besides.
