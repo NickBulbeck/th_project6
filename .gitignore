@@ -1,3 +1,6 @@
 node_modules/
-example-html/
-mockups/
+# Would ordinarily include the following two folders as well:
+# example-html/
+# mockups/
+# ... but they're left in for now, for the purpose of peer-reviewing the final
+# look and feel of the project.
