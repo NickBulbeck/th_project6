@@ -5,10 +5,11 @@
             
         },
         "about" : {
-    
+            "title" : "About",
+            "bio" : "I'm autistic."
         },
         "projects" : {
-    
+            "title" : "Projects"
         },
         "layout" : {
             "name" : "Nick Bulbeck",

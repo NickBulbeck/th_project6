@@ -1,18 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const content = require('../data/content.json').content;
+const aboutContent = require('../data/content.json').content.about;
+const layout = require('../data/content.json').content.layout;
 
 router.get('/',(req,res) => {
-    const message = "About route is working so far";
-    const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-    res.send(HTML);
+    aboutContent.docTitle = aboutContent.title;
+    aboutContent.layout = layout;
+    res.render('about',aboutContent);
 })
-router.get('/aboutError',(req,res) => {
-    const err = new Error("Something went wrong in the aboutError thing");
-    err.status = 500;
-    console.log(err.status);
-    throw(err);
-} )
 
 module.exports = router;

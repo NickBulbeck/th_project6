@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const content = require('../data/content.json').content;
+const indexContent = require('../data/content.json').content.index;
+const layout = require('../data/content.json').content.layout;
 
 
 router.get('/index',(req,res) => {
@@ -12,11 +13,9 @@ router.get('/home',(req,res) => {
 })
 
 router.get('/',(req,res) => {
-    const message = "Root route is working so far";
-    const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-    // res.send(HTML);
-    console.log(message);
-    res.render('index',content);
+    indexContent.docTitle = indexContent.title;
+    indexContent.layout = layout;
+    res.render('index',indexContent);
 })
 
 
