@@ -11,6 +11,7 @@ router.get('/',(req,res) => {
 router.get('/aboutError',(req,res) => {
     const err = new Error("Something went wrong in the aboutError thing");
     err.status = 500;
+    console.log(err.status);
     throw(err);
 } )
 
