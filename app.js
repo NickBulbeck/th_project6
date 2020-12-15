@@ -1,34 +1,28 @@
 const express = require('express');
 const app = express();
 
-// Data:
-const projectData = require('./data/data.json').projects;
-
 // Routes:
 const indexRoutes = require('./routes/index.js');
 const aboutRoutes = require('./routes/about.js');
 const projectsRoutes = require('./routes/projects.js');
 
 app.use(indexRoutes);
-// app.get('/',(req,res) => {
-//     const message = "Root route is working so far";
-//     const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-//     res.send(HTML);
-// })
-
 app.use('/about',aboutRoutes);
-// app.get('/about',(req,res) => {
-//     const message = "About route is working so far";
-//     const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-//     res.send(HTML);
-// })
-
 app.use('/projects',projectsRoutes);
-// app.get('/projects/:id',(req,res) => {
-//     const message = `Project ${req.params.id} route is working so far`;
-//     const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-//     res.send(HTML);
-// })
+
+// Errors...
+const errorHandler = require('./js/errors.js');
+
+app.use(errorHandler);
+// ToDo: work out why this doesn't work when used in errorHandler, but does work here 
+//  (when the 404 error works identically in either file).
+app.use((err,req,res,next) => {
+    if (!err.status) {
+        err.status = 500;
+    }
+    res.status(err.status);
+    res.send(`<p style="font-family: sans-serif">${err.status}: ${err.message}</p>`);
+})
 
 // aaaaand... GO!
 
