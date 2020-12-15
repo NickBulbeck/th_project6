@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+//
+app.set('view engine','pug');
+app.use('/static',express.static('public'));
+
 // Routes:
 const indexRoutes = require('./routes/index.js');
 const aboutRoutes = require('./routes/about.js');

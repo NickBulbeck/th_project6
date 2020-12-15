@@ -14,7 +14,9 @@ router.get('/home',(req,res) => {
 router.get('/',(req,res) => {
     const message = "Root route is working so far";
     const HTML = `<h2 style="font-family: sans-serif; font-weight:350">${message}</h2>`;
-    res.send(HTML);
+    // res.send(HTML);
+    console.log(message);
+    res.render('index',content);
 })
 
 

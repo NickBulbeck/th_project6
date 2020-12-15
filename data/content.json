@@ -1,3 +1,18 @@
 {
+    "content" : {
+        "index" : {
+            "title" : "Home page"
+            
+        },
+        "about" : {
     
+        },
+        "projects" : {
+    
+        },
+        "layout" : {
+            "name" : "Nick Bulbeck",
+            "description" : "A sample of the JavaScript projects I've built whilst learning the language."
+        }
+    }
 }

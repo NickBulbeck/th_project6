@@ -2,17 +2,9 @@ const express = require('express');
 const app = express();
 
 app.use((req,res,next) => {
-    const url = req.url;
-    const baseURL = req.baseUrl;
-    const originalURL = req.originalUrl;
-    const host = req.hostname;
-    const wotevah = req.protocol;
-    console.log(wotevah);
-    console.log(`url: ${url}`);
-    console.log(`baseURL: ${baseURL}`);
-    console.log(`originalURL: ${originalURL}`);
-    console.log(`host: ${host}`);
-    const message = `We tried calling ${url}, but there was nobody in.`;
+    const url = `${req.get('host')}${req.url}`;
+    // the span needs a class of 'url' when I do this properly
+    const message = `We tried calling <span style="font-family:monospace">${url}</span>, but there was nobody in.`;
     const notFound = new Error(message);
     notFound.status = 404;
     next(notFound);
