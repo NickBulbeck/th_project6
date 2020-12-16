@@ -7,7 +7,12 @@
             "technologies" : ["HTML","CSS","JavaScript"],
             "github_repo" : "https://github.com/NickBulbeck/th_project1.git",
             "github_pages" : "https://nickbulbeck.github.io/th_project1/",
-            "image_urls" : ["p1_banner.png","p1_1.png","p1_2.png"]
+            "image_urls" : ["p1_banner.png",
+                                [
+                                    "p1_1.png",
+                                    "p1_2.png"
+                                ]
+                            ]
         },
         {
             "id" : "2",
@@ -16,7 +21,12 @@
             "technologies" : ["HTML","CSS","JavaScript"],
             "github_repo" : "https://github.com/NickBulbeck/th_project2.git",
             "github_pages" : "https://nickbulbeck.github.io/th_project2/",
-            "image_urls" : ["p2_banner.png","p2_1.png","p2_2.png"]
+            "image_urls" : ["p2_banner.png",
+                                [
+                                    "p2_1.png",
+                                    "p2_2.png"
+                                ]
+                            ]
         },
         {
             "id" : "3",
@@ -25,7 +35,11 @@
             "technologies" : ["HTML","CSS","JavaScript"],
             "github_repo" : "https://github.com/NickBulbeck/th_project3.git",
             "github_pages" : "https://nickbulbeck.github.io/th_project3/",
-            "image_urls" : ["p3_banner.png","p3_1.png"]
+            "image_urls" : ["p3_banner.png",
+                                [
+                                    "p3_1.png"
+                                ]
+                            ]
         },
         {
             "id" : "4",
@@ -34,7 +48,11 @@
             "technologies" : ["HTML","CSS","JavaScript"],
             "github_repo" : "https://github.com/NickBulbeck/th_project4.git",
             "github_pages" : "https://nickbulbeck.github.io/th_project4/",
-            "image_urls" : ["p4_banner.png","p4_1.png"]
+            "image_urls" : ["p4_banner.png",
+                                [
+                                    "p4_1.png"
+                                ]
+                            ]
         },
         {
             "id" : "5",
@@ -43,7 +61,12 @@
             "technologies" : ["HTML","CSS","JavaScript"],
             "github_repo" : "https://github.com/NickBulbeck/th_project5.git",
             "github_pages" : "https://nickbulbeck.github.io/th_project5/",
-            "image_urls" : ["p5_banner.png","p5_1.png","p5_2.png"]
+            "image_urls" : ["p5_banner.png",
+                                [
+                                    "p5_1.png",
+                                    "p5_2.png"
+                                ]
+                            ]
         }
     ]
 }
