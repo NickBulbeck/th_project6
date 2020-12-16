@@ -10,7 +10,9 @@
             "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. ", 
             "name" : "Nick Bulbeck",
             "jobTitle" : "Autistic 50-something and full stack JavaScript developer",
-            "skills" : ["a","b","c"],
+            "skills" : [
+                "a","b","c"
+            ],
             "contacts" : ["bulbecknick@gmail.com"],
             "media" : [
                 {"name" : "LinkedIn", "url" : "https://www.linkedin.com/in/nickbulbeck/"},
