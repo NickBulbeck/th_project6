@@ -5,68 +5,85 @@
             "project_name" : "Random Quote Generator",
             "description" : "Practicing the basics of JavaScript",
             "technologies" : ["HTML","CSS","JavaScript"],
-            "github_repo" : "https://github.com/NickBulbeck/th_project1.git",
-            "github_pages" : "https://nickbulbeck.github.io/th_project1/",
-            "image_urls" : ["p1_banner.png",
+            "github_link" : "https://github.com/NickBulbeck/th_project1.git",
+            "live_link" : "https://nickbulbeck.github.io/th_project1/",
+            "image_urls" : {
+                            "sample": "p1_sample.png",
+                            "banners" :
                                 [
-                                    "p1_1.png",
-                                    "p1_2.png"
+                                    {"url" : "p1_1.png"},
+                                    {"url" : "p1_2.png"},
+                                    {"url" : "p1_3.png"}
                                 ]
-                            ]
+            }
         },
         {
             "id" : "2",
             "project_name" : "Employee Directory",
             "description" : "An exercise in DOM manipulation",
             "technologies" : ["HTML","CSS","JavaScript"],
-            "github_repo" : "https://github.com/NickBulbeck/th_project2.git",
-            "github_pages" : "https://nickbulbeck.github.io/th_project2/",
-            "image_urls" : ["p2_banner.png",
-                                [
-                                    "p2_1.png",
-                                    "p2_2.png"
-                                ]
-                            ]
+            "github_link" : "https://github.com/NickBulbeck/th_project2.git",
+            "live_link" : "https://nickbulbeck.github.io/th_project2/",
+            "image_urls" : {
+                "sample": "p2_sample.png",
+                "banners" :
+                    [
+                        {"url" : "p2_1.png"},
+                        {"url" : "p2_2.png"},
+                        {"url" : "p2_3.png"}
+                    ]
+            }
         },
         {
             "id" : "3",
-            "project_name" : "Conference Registration Form",
+            "project_name" : "Registration Form",
             "description" : "Front-end validation and form handling",
-            "technologies" : ["HTML","CSS","JavaScript"],
-            "github_repo" : "https://github.com/NickBulbeck/th_project3.git",
-            "github_pages" : "https://nickbulbeck.github.io/th_project3/",
-            "image_urls" : ["p3_banner.png",
-                                [
-                                    "p3_1.png"
-                                ]
-                            ]
+            "technologies" : ["HTML","CSS","JavaScript","regular expressions","form submission"],
+            "github_link" : "https://github.com/NickBulbeck/th_project3.git",
+            "live_link" : "https://nickbulbeck.github.io/th_project3/",
+            "image_urls" : {
+                "sample": "p1_sample.png",
+                "banners" :
+                    [
+                        {"url" : "p3_1.png"},
+                        {"url" : "p3_2.png"},
+                        {"url" : "p3_3.png"}
+                    ]
+            }
         },
         {
             "id" : "4",
             "project_name" : "Phrase Hunter",
             "description" : "Object-oriented design in JavaScript",
             "technologies" : ["HTML","CSS","JavaScript"],
-            "github_repo" : "https://github.com/NickBulbeck/th_project4.git",
-            "github_pages" : "https://nickbulbeck.github.io/th_project4/",
-            "image_urls" : ["p4_banner.png",
-                                [
-                                    "p4_1.png"
-                                ]
-                            ]
+            "github_link" : "https://github.com/NickBulbeck/th_project4.git",
+            "live_link" : "https://nickbulbeck.github.io/th_project4/",
+            "image_urls" : {
+                "sample": "p4_sample.png",
+                "banners" :
+                [
+                    {"url" : "p4_1.png"},
+                    {"url" : "p4_2.png"},
+                    {"url" : "p4_3.png"}
+                ]
+            }
         },
         {
             "id" : "5",
-            "project_name" : "Awesome Employee Directory",
+            "project_name" : "Employee Directory II",
             "description" : "Asynchronous JavaScript, fetch() and error-handling",
             "technologies" : ["HTML","CSS","JavaScript"],
-            "github_repo" : "https://github.com/NickBulbeck/th_project5.git",
-            "github_pages" : "https://nickbulbeck.github.io/th_project5/",
-            "image_urls" : ["p5_banner.png",
-                                [
-                                    "p5_1.png",
-                                    "p5_2.png"
-                                ]
-                            ]
+            "github_link" : "https://github.com/NickBulbeck/th_project5.git",
+            "live_link" : "https://nickbulbeck.github.io/th_project5/",
+            "image_urls" : {
+                "sample": "p5_sample.png",
+                "banners" :
+                    [
+                        {"url" : "p5_1.png"},
+                        {"url" : "p5_2.png"},
+                        {"url" : "p5_3.png"}
+                    ]
+            }
         }
     ]
 }
