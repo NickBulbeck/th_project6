@@ -1,3 +1,5 @@
-extends layout.pug
-
-block content
+extends error-header.pug
+block errorMessage
+    |We tried calling 
+    span.url= `${url}`
+    |, but there was nobody in.

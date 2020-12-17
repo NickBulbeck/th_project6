@@ -1,13 +1,21 @@
 const express = require('express');
 const app = express();
 
+const errorContent = require('../data/content.json').content.errors;
+const layout = require('../data/content.json').content.layout;
+errorContent.layout = layout;
+
 app.use((req,res,next) => {
     const url = `${req.get('host')}${req.url}`;
+    errorContent.docTitle = "Not found";
+    errorContent.url = url;
     // the span needs a class of 'url' when I do this properly
-    const message = `We tried calling <span style="font-family:monospace">${url}</span>, but there was nobody in.`;
+    const message = `We tried calling <span class="url">${url}</span>, but there was nobody in.`;
     const notFound = new Error(message);
     notFound.status = 404;
-    next(notFound);
+    errorContent.error = notFound;
+    // next(notFound);
+    res.render('page-not-found',errorContent);
 })
 // app.use((err,req,res,next) => {
 //     if (!err.status) {

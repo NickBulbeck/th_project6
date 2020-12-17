@@ -25,6 +25,9 @@
         "layout" : {
             "name" : "Nick Bulbeck",
             "description" : "A sample of the JavaScript projects I've built whilst learning the language."
+        },
+        "errors" : {
+            "toDo" : "thinkOfSomeValuesToGoInHere"
         }
     }
 }
