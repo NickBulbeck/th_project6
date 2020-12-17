@@ -15,6 +15,7 @@ router.get('/:id',(req,res,next) => {
         const message = `It seems you tried to find <span class="url">${url}</span>. Sadly, there is no Project "<span class="url">${req.url}</span>".`;
         const err = new Error(message);
         err.status = 404;
+        err.url = url;
         next(err);
     }
 

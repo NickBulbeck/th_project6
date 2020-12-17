@@ -14,7 +14,6 @@ app.use((req,res,next) => {
     const notFound = new Error(message);
     notFound.status = 404;
     errorContent.error = notFound;
-    // next(notFound);
     res.render('page-not-found',errorContent);
 })
 // app.use((err,req,res,next) => {
