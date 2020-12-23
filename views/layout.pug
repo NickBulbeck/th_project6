@@ -17,9 +17,9 @@ html(class="no-js" lang="en" dir="ltr")
             img.thumbnail(src='/static/images/portrait.jpg',alt='The author standing on a hilltop on the Isle of Arran')
           .cell.auto
 
-            h5= layout.name
+            h5= name
 
-            p.text-light= layout.description
+            p.text-light= description
 
             a(href='/about') Learn More →
 
@@ -28,7 +28,7 @@ html(class="no-js" lang="en" dir="ltr")
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
 
-          span.title-bar-title= layout.name
+          span.title-bar-title= name
       block content
         
 

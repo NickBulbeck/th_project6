@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const indexContent = require('../data/content.json').content.index;
-const layout = require('../data/content.json').content.layout;
+const createLocals = require('../js/createLocals.js').createLocals;
 const projects = require('../data/data.json').projects;
 
 
@@ -14,10 +13,9 @@ router.get('/home',(req,res) => {
 })
 
 router.get('/',(req,res) => {
-    indexContent.docTitle = indexContent.title;
-    indexContent.layout = layout;
-    indexContent.projects = projects;
-    res.render('index',indexContent);
+    const locals = createLocals('index');
+    locals.projects = projects;
+    res.render('index',locals);
 })
 
 
