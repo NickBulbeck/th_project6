@@ -15,7 +15,7 @@ app.use('/about',aboutRoutes);
 app.use('/projects',projectsRoutes);
 
 // Errors...
-const errorHandler = require('./js/errors.js');
+const errorHandler = require('./js/handleErrors.js');
 
 app.use(errorHandler);
 // ToDo: work out why this doesn't work when used in errorHandler, but does work here 
