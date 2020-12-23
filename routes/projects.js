@@ -12,7 +12,6 @@ router.get('/:id',(req,res,next) => {
             ...locals,
             ...project
         }
-        console.log(locals);
         res.render('projects',locals);
     } else {
         const url = `${req.get('host')}/projects${req.url}`;
