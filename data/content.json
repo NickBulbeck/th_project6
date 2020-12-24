@@ -26,8 +26,8 @@
             "name" : "Nick Bulbeck",
             "description" : "A sample of the JavaScript projects I've built whilst learning the language."
         },
-        "errors" : {
-            "toDo" : "thinkOfSomeValuesToGoInHere"
+        "error" : {
+            "toDo" : "Think of some values to go in here; or else just horse this object."
         }
     }
 }
