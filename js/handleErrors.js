@@ -4,7 +4,7 @@ const app = express();
 const createLocals = require('./createLocals').createLocals;
 
 app.use((req,res,next) => {
-    let locals = createLocals('errors');
+    let locals = createLocals('error');
     const url = `${req.get('host')}${req.url}`;
     locals.url = url;
     // the span needs a class of 'url' when I do this properly
