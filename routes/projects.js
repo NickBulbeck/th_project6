@@ -17,16 +17,10 @@ router.get('/:id',(req,res,next) => {
     } else {
         let locals = createLocals('error');
         const url = `${req.get('host')}/projects${req.url}`;
-        // const message = `It seems you tried to find <span class="url">${url}</span>. Sadly, there is no Project "<span class="url">${req.url}</span>".`;
-        let err = create404('project');
-        err.url = url;
-        err = {
-            ...err,
-            ...locals
-        };
-        console.log(err);
-        next(err);
-        // app.render('page-not-found',err);
+        let error = create404();
+        console.log(error);
+        locals.error = error;
+        res.render('page-not-found',locals);
     }
 
 })

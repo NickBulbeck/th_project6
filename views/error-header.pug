@@ -5,6 +5,6 @@ block content
     a(href='/') ← Home page
   article.grid-container.portfolio-intro
     div
-      h1= error.status
+      h1= `${error.status} - ${url}`
       p.lead.text-light
       block errorMessage

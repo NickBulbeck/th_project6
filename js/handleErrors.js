@@ -7,11 +7,8 @@ app.use((req,res,next) => {
     let locals = createLocals('error');
     const url = `${req.get('host')}${req.url}`;
     locals.url = url;
-    // the span needs a class of 'url' when I do this properly
-    // const message = `We tried calling <span class="url">${url}</span>, but there was nobody in.`;
     const notFound = require('./createError.js').create404();
     locals.error = notFound;
-    console.log(locals);
     res.render('page-not-found',locals);
 })
 // app.use((err,req,res,next) => {
