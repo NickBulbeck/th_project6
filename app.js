@@ -24,8 +24,11 @@ app.use((err,req,res,next) => {
     if (!err.status) {
         err.status = 500;
     }
+    console.log(err.stack);
     res.status(err.status);
-    res.send(`<p style="font-family: sans-serif">${err.status}: ${err.message}</p>`);
+    let locals = require('./js/createLocals.js').createLocals('error');
+    locals.error = err;
+    res.render('error',locals);
 })
 
 // aaaaand... GO!
