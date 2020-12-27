@@ -5,6 +5,10 @@ block content
     a(href='/') ← Home page
   article.grid-container.portfolio-intro
     div
-      h1= `${error.status} - ${url}`
+      if url
+        h1= `Error status ${error.status} - not found`
+        h2.url= url
+      else
+        h1=`Error status ${error.status} - Evil has befallen...`
       p.lead.text-light
       block errorMessage
