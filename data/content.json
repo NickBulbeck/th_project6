@@ -27,7 +27,7 @@
             "description" : "A sample of the JavaScript projects I've built whilst learning the language."
         },
         "error" : {
-            "title" : "AAARGH!",
+            "title" : "AAARGH! WE'RE DOOMED!",
             "notFoundMessage" : "We tried calling that address, but nobody was in. Try clicking a link or something like that.",
             "errorMessage" : "Evil has befallen the server. But don't panic; instead, count your blessings and refresh the page. Or something."
         }

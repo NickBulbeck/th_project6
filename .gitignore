@@ -4,3 +4,5 @@ node_modules/
 # mockups/
 # ... but they're left in for now, for the purpose of peer-reviewing the final
 # look and feel of the project.
+# Also this one kept turning up:
+.DS_Store
