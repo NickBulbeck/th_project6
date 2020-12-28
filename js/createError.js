@@ -1,5 +1,8 @@
 const createError = (status) => {
     const err = new Error("Evil is afoot, and bother has ensued.");
+    if (!status) {
+        status = 500;
+    }
     err.status = status;
     return err;
 }
