@@ -8,13 +8,13 @@
             "github_link" : "https://github.com/NickBulbeck/th_project1.git",
             "live_link" : "https://nickbulbeck.github.io/th_project1/",
             "image_urls" : {
-                            "sample": "p1_sample.png",
-                            "banners" :
-                                [
-                                    {"url" : "p1_1.png"},
-                                    {"url" : "p1_2.png"},
-                                    {"url" : "p1_3.png"}
-                                ]
+                "sample": "p1_sample.png",
+                "banners" :
+                    [
+                        {"url" : "p1_1.png"},
+                        {"url" : "p1_2.png"},
+                        {"url" : "p1_3.png"}
+                    ]
             }
         },
         {

@@ -18,3 +18,7 @@ OK. ToDo:
     - pug template with re-direct if cookie exists
     - Douglas Adams button
     - JavaScript public file for Douglas Adams button
+
+
+BUG ToDo's
+- Fix the not-found thing with projects/:duffID not showing the URL.
