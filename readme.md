@@ -6,6 +6,7 @@ https://medium.com/javascript-in-plain-english/optimizing-a-javascript-driven-sp
 OK. ToDo:
 - Full audit of the rubric
 - Styling changes to get Exceeds
+- rename javascript subfiles using kebab case?
 - Comments in this file introducing the app
     - Comments in 3 ./js/ files
     - Comments in 3 ./routes/ files
