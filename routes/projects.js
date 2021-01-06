@@ -20,6 +20,7 @@ router.get('/:id',(req,res,next) => {
         let error = create404();
         console.log(error);
         locals.error = error;
+        locals.url = url;
         res.render('page-not-found',locals);
     }
 
