@@ -1,3 +1,13 @@
+/**************************************************************
+inputs: page (string)
+does:   reads ./data/content.json for text content specific to 
+        the page specified in the 'page' variable. In a more
+        advanced version of the app, it would retrieve this
+        information from a database (much as WordPress does).
+outputs: a custom object that can be sent directly to a pug
+         template.
+***************************************************************/
+
 const createLocals = (page) => {
     const content = require('../data/content.json').content;
     const layout = content.layout;

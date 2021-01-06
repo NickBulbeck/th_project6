@@ -1,3 +1,12 @@
+/**************************************************************
+    Contains the middleware that sets up the "not found" page.
+    Ideally it would also contain the code that sets up the
+    general error page too, but for some reason this didn't
+    work. So I had to keep that code in app.js.
+    
+    ToDo: Identify the above reason and make it work. Obviously.
+***************************************************************/
+
 const express = require('express');
 const app = express();
 
