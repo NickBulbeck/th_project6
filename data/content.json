@@ -2,12 +2,12 @@
     "content" : {
         "index" : {
             "title" : "Nick Bulbeck",
-            "heading" : "So you want to know about autism and tech?",
-            "elevator" : "My name is Nick Bulbeck, and I'm autistic. There's a common misperception that autistic people are natural software developers; that's not always true, and it's not true of me. So this portfolio is an example of the way an autistic person approaches a complex and unfamiliar subject. Click on the images below to see more..."
+            "heading" : "Autism and Tech",
+            "elevator" : "My name is Nick Bulbeck, and I'm autistic. There's a common misperception that autistic people are natural software developers. But that's not always true, and it's not true of me. So this portfolio is an example of the way an autistic person approaches a complex and unfamiliar subject. Click on the images below to see more..."
         },
         "about" : {
             "title" : "About",
-            "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. ", 
+            "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. But precisely because I have a different perspective, I see possibilities that most people can't. And because I've spent decades learning - the hard way - how to fit in, I'm uniquely placed to help other people get the best out of themselves and each other.", 
             "name" : "Nick Bulbeck",
             "jobTitle" : "Autistic 50-something and full stack JavaScript developer",
             "skills" : [
