@@ -3,8 +3,8 @@
         {
             "id" : "1",
             "project_name" : "Random Quote Generator",
-            "description" : "Practicing the basics of JavaScript",
-            "technologies" : ["HTML","CSS","JavaScript"],
+            "description" : "An app that displays quotes from an internal quote store; you can choose from three different categories. Double-clicking the 'Show another quote' button launches a Douglas-Adams-themed easter egg...",
+            "technologies" : ["HTML","CSS","JavaScript","github"],
             "github_link" : "https://github.com/NickBulbeck/th_project1.git",
             "live_link" : "https://nickbulbeck.github.io/th_project1/",
             "image_urls" : {
@@ -20,8 +20,8 @@
         {
             "id" : "2",
             "project_name" : "Employee Directory",
-            "description" : "An exercise in DOM manipulation",
-            "technologies" : ["HTML","CSS","JavaScript"],
+            "description" : "First steps in DOM manipulation. The app shows a paginated display of fictional employees, with the facility to search on employee name. Clicking the Douglas Adams button converts every employee's name into a random, but pronounceable, name in the style of The Hitchhiker's Guide to the Galaxy. Obviously. (Double-clicking it changes them back.)",
+            "technologies" : ["HTML","CSS","JavaScript","github"],
             "github_link" : "https://github.com/NickBulbeck/th_project2.git",
             "live_link" : "https://nickbulbeck.github.io/th_project2/",
             "image_urls" : {
@@ -37,8 +37,8 @@
         {
             "id" : "3",
             "project_name" : "Registration Form",
-            "description" : "Front-end validation and form handling",
-            "technologies" : ["HTML","CSS","JavaScript","regular expressions","form submission"],
+            "description" : "Front-end validation and form handling. There's no back-end as yet; this is still an early project. But the form cannot be submitted if there are errors. The Douglas-Adams-themed easter egg is a sample of Vogon poetry which is, of course, the third worst in the universe. Oh, and in Scotland it's called a 'credit caird'.",
+            "technologies" : ["HTML","CSS","JavaScript","github","regular expressions","form submission"],
             "github_link" : "https://github.com/NickBulbeck/th_project3.git",
             "live_link" : "https://nickbulbeck.github.io/th_project3/",
             "image_urls" : {
@@ -54,8 +54,8 @@
         {
             "id" : "4",
             "project_name" : "Phrase Hunter",
-            "description" : "Object-oriented design in JavaScript",
-            "technologies" : ["HTML","CSS","JavaScript"],
+            "description" : "An object-oriented version of the old-fashioned game of 'hangman' (as it's known in the UK), this app presents hidden phrases of varying levels of difficulty and challenges you to guess them with fewer than 5 mistakes. Although the selection of phrases is limited, you have to guess them all before you see a phrase repeated. There's no Douglas-Adams-themed easter egg as such; but the game board does have the words 'Don`t Panic' inscribed on it in large, friendly letters.",
+            "technologies" : ["HTML","CSS","JavaScript","github","OOP"],
             "github_link" : "https://github.com/NickBulbeck/th_project4.git",
             "live_link" : "https://nickbulbeck.github.io/th_project4/",
             "image_urls" : {
@@ -71,8 +71,8 @@
         {
             "id" : "5",
             "project_name" : "Employee Directory II",
-            "description" : "Asynchronous JavaScript, fetch() and error-handling",
-            "technologies" : ["HTML","CSS","JavaScript"],
+            "description" : "A more sophisticated version of the earlier 'Employee Directory' project, this app fetches data via an HTTP request from randomuser.me which, I discovered, includes Lego character thumbnails. I included them because obviously. The user can display different numbers of results, or select a Douglas Adams option. Naturally, this displays Forty-Two results, but this time they are drawn from my own code embedded on randomapi.com. As with the first 'Employee Directory' project, it generates random names in the classic Hitchhiker style. My favourite so far is probably 'Slon Thudlevels' (it really happened).",
+            "technologies" : ["HTML","CSS","JavaScript","github","Asynchronous code","error-handling","randomapi.com"],
             "github_link" : "https://github.com/NickBulbeck/th_project5.git",
             "live_link" : "https://nickbulbeck.github.io/th_project5/",
             "image_urls" : {

@@ -9,9 +9,22 @@
             "title" : "About",
             "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. But precisely because I have a different perspective, I see possibilities that most people can't. Because I've never quite fitted in, I don't shy away from doing the right thing even when it may be unpopular. And because I've spent decades learning - the hard way - how to fit in, I'm uniquely placed to help other people get the best out of themselves and each other.", 
             "name" : "Nick Bulbeck",
-            "jobTitle" : "Autistic 50-something and full stack JavaScript developer",
+            "jobTitle" : "Dad, 50-something and full stack JavaScript developer",
             "skills" : [
-                "a","b","c"
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "node",
+                "express",
+                "React",
+                "SQL",
+                "OOP",
+                "Java (but don't ask me to)",
+                "github",
+                "TDD",
+                "piano",
+                "guitar",
+                "And last but not least: google"
             ],
             "contacts" : ["bulbecknick@gmail.com"],
             "media" : [
@@ -24,7 +37,7 @@
         },
         "layout" : {
             "name" : "Nick Bulbeck",
-            "description" : "A sample of the JavaScript projects I've built whilst learning the language."
+            "miniBio" : "A sample of the JavaScript projects I've built whilst learning the language."
         },
         "error" : {
             "title" : "AAARGH! WE'RE DOOMED!",
