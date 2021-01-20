@@ -21,5 +21,5 @@ OK. ToDo:
     - JavaScript public file for Douglas Adams button
 
 
-BUG ToDo's
-- Fix the not-found thing with projects/:duffID not showing the URL.
+Feature ToDo's
+- thumbnail class to have a hover box, transitioned in 0.2 seconds

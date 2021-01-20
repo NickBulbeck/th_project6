@@ -3,11 +3,11 @@
         "index" : {
             "title" : "Nick Bulbeck",
             "heading" : "Autism and Tech",
-            "elevator" : "My name is Nick Bulbeck, and I'm autistic. There's a common misperception that autistic people are natural software developers. But that's not always true, and it's not true of me. So this portfolio is an example of the way an autistic person approaches a complex and unfamiliar subject. Click on the images below to see more..."
+            "elevator" : "My name is Nick Bulbeck, and I'm autistic. There's a common misperception that autistic people are natural software developers. But that's not always true! It's certainly not true of me. So this portfolio is an example of the way an autistic person approaches a complex and unfamiliar subject. Click on the images below to see more..."
         },
         "about" : {
             "title" : "About",
-            "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. But precisely because I have a different perspective, I see possibilities that most people can't. Because  And because I've spent decades learning - the hard way - how to fit in, I'm uniquely placed to help other people get the best out of themselves and each other.", 
+            "bio" : "I'm autistic. This means that I don't experience the world the way most people do, which in turn means that I don't react to it in the way society expects. But precisely because I have a different perspective, I see possibilities that most people can't. Because I've never quite fitted in, I don't shy away from doing the right thing even when it may be unpopular. And because I've spent decades learning - the hard way - how to fit in, I'm uniquely placed to help other people get the best out of themselves and each other.", 
             "name" : "Nick Bulbeck",
             "jobTitle" : "Autistic 50-something and full stack JavaScript developer",
             "skills" : [
@@ -28,7 +28,7 @@
         },
         "error" : {
             "title" : "AAARGH! WE'RE DOOMED!",
-            "notFoundMessage" : "We tried calling that address, but nobody was in. Try clicking a link or something like that.",
+            "notFoundMessage" : "We tried calling that address, but nobody was in. Try clicking a link, or something like that. You probably don't need to reboot, though. Anyway, why are you still reading this? Go and do something useful!",
             "errorMessage" : "Evil has befallen the server. But don't panic; instead, count your blessings and refresh the page. Or something."
         }
     }
