@@ -6,6 +6,7 @@ I can't pretend that I've revolutionised the world of front-end design
 with this project; that was never the intention. I've really made the
 basic minimum of stylistic changes for the Exceeds Expectations rubric:
  - Added a lightGrey and darkGrey colour variable for the paragraph text;
+ - Added the colour to the article background
  - Added box shading to the image links on the home page;
  - Added a transition to the box-shading.
  So, there you are.

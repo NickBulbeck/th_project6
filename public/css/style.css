@@ -177,7 +177,7 @@ a:hover{
 }
 
 article {
-  background-color: #e0e0e0;
+  background-color: var(--lightGrey);
 }
 
 .portfolio-index .thumbnail:hover{
