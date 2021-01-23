@@ -8,8 +8,8 @@ describe('createLocals',function() {
     });
     it('should get the *layout* content',function() {
         expect(createLocals().name).to.equal("Nick Bulbeck");
-        expect(createLocals().description).to.be.a('string');
-        expect(createLocals().description).to.not.have.lengthOf(0);
+        expect(createLocals().miniBio).to.be.a('string');
+        expect(createLocals().miniBio).to.not.have.lengthOf(0);
     });
     it('should get the *index* content',function() {
         const indexValues = createLocals('index');
