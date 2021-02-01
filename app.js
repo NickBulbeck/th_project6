@@ -10,6 +10,14 @@ const indexRoutes = require('./routes/index.js');
 const aboutRoutes = require('./routes/about.js');
 const projectsRoutes = require('./routes/projects.js');
 
+// Try this ....................................
+app.get('/*',(req,res,next) => {
+    if (false) {
+        res.send('<h1>Hello, cookieworld!</h1>');
+    }
+    next();
+})
+// .............................................
 app.use(indexRoutes);
 app.use('/about',aboutRoutes);
 app.use('/projects',projectsRoutes);
