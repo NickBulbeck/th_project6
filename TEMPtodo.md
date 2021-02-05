@@ -6,7 +6,9 @@ So, in no real order:
 - Consider having clickwall.pug rendered translucently over the actual page if it's a real route. Might work as a called function.
 
 - Ideas: use window.onload() and client-side JS. Problem then if JavaScript disabled.
-
+- Main challenge is to get two buttons, not just one, in the form.
+- So, could have the Douglas Adams button set a variable.
+- In fact, yes, do this. So, we want app.js and hello.html from expressIntro
 
 To get started:
  - create an app.get('*',etc) - works.
