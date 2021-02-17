@@ -1,8 +1,12 @@
-section.namecard
-  .namecard-hello
-    p.namecard-greeting Hello, student!
-  form.namecard-form(action='' method='post')
-    label.namecard-prompt
-      | Please enter your name:
-    input.namecard-name(type='text' name='username')
-    button.namecard-submit(type='submit') Submit
+extends layout
+
+block content
+  form(action='/' method='post')
+    p
+      | This project uses cookies for your comfort and convenience. Or, actually, as a way of adding a Douglas-Adams-themed additional feature.
+    p Privacy information
+    p
+      | Because this server is running locally on your own machine, it&apos;s not sending any data anywhere else. And actually the only data it stores is a record of which button you clicked. Also the national sport of TreeHouse is cricket; very few TreeHousers are aware of this because I decided it unilaterally.
+    p I hope this is helpful.
+    button(type='submit') I&apos;m OK with this
+    button(type='submit' formaction='/') Douglas Adams button
