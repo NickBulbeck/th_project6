@@ -185,3 +185,18 @@ article {
   margin-bottom: 1rem;
   transition: 0.2s 
 }
+
+#cookieWall {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #FFFFFF;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #111;
+  opacity: 0.95
+}

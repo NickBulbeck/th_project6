@@ -12,12 +12,20 @@ const projectsRoutes = require('./routes/projects.js');
 
 // Try this ....................................
 app.get('/*',(req,res,next) => {
-    if (false) {
-        res.send('<h1>Hello, cookieworld!</h1>');
+    const coin = Math.floor(Math.random() * 2);
+    console.log(`coin: ${coin}`);
+    if (coin > 0) {
+        res.render('clickwall');
     }
     next();
 })
+
+
 // .............................................
+
+
+
+
 app.use(indexRoutes);
 app.use('/about',aboutRoutes);
 app.use('/projects',projectsRoutes);
@@ -38,6 +46,21 @@ app.use((err,req,res,next) => {
     locals.error = err;
     res.render('error',locals);
 })
+// Try this
+app.post('/',(req,res,next) => {
+    const locals = createLocals('index');
+    locals.projects = projects;
+    res.redirect('/index',locals);
+})
+app.post('/da',(req,res,next) => {
+    // do something to set cookies
+    const locals = createLocals('index');
+    locals.projects = projects;
+    res.redirect('/index',locals);
+})
+
+
+
 
 // aaaaand... GO!
 

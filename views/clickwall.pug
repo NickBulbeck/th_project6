@@ -2,12 +2,13 @@ extends layout
 
 block content
   form(action='/' method='post')
-    h2 Welome to my wee node app
-    p
-      | This project uses cookies for your comfort and convenience. Or, actually, as a way of adding a Douglas-Adams-themed additional feature.
-    h2 Privacy information
-    p
-      | Because this server is running locally on your own machine, it&apos;s not sending any data anywhere else. And actually the only data it stores is a record of which button you clicked. Also the national sport of TreeHouse is cricket; very few TreeHousers are aware of this because I decided it unilaterally.
-    p I hope this is helpful.
-    button(type='submit') I&apos;m OK with this
-    button(type='submit' formaction='/') Douglas Adams button
+    #cookieWall
+      h2 Welome to my wee node app
+      p
+        | This project uses cookies for your comfort and convenience. Or, actually, as a way of adding a Douglas-Adams-themed additional feature.
+      h2 Privacy information
+      p
+        | Because this server is running locally on your own machine, it's not sending any data anywhere else. And actually the only data it stores is a record of which button you clicked. Also the national sport of TreeHouse is cricket; very few TreeHousers are aware of this because I decided it unilaterally.
+      p I hope this is helpful.
+      button(type='submit') I'm OK with this
+      button(type='submit' formaction='/da') Douglas Adams button
