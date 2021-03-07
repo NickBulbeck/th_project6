@@ -71,7 +71,7 @@
         {
             "id" : "5",
             "project_name" : "Employee Directory II",
-            "description" : "A more sophisticated version of the earlier 'Employee Directory' project, this app fetches data via an HTTP request from randomuser.me which, I discovered, includes Lego character thumbnails. I included them because obviously. The user can display different numbers of results, or select a Douglas Adams option. Naturally, this displays Forty-Two results, but this time they are drawn from my own code embedded on randomapi.com. As with the first 'Employee Directory' project, it generates random names in the classic Hitchhiker style. My favourite so far is probably 'Slon Thudlevels' (it really happened).",
+            "description" : "A more sophisticated version of the earlier 'Employee Directory' project, this app fetches data via an HTTP request from randomuser.me which, I discovered, includes Lego character thumbnails. Well, I couldn't pass this up. The user can display different numbers of results, or select a Douglas Adams option. Naturally, this displays Forty-Two results, but this time they are drawn from my own code embedded on randomapi.com. As with the first 'Employee Directory' project, it generates random names in the classic Hitchhiker style. My favourite so far is probably 'Slon Thudlevels' (it really happened).",
             "technologies" : ["HTML","CSS","JavaScript","github","Asynchronous code","error-handling","randomapi.com"],
             "github_link" : "https://github.com/NickBulbeck/th_project5.git",
             "live_link" : "https://nickbulbeck.github.io/th_project5/",

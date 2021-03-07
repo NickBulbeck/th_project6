@@ -198,5 +198,15 @@ article {
   right: 0;
   border-radius: 5px;
   background-color: #111;
-  opacity: 0.95
+  opacity: 0.75;
+  z-index: 1000;
+}
+
+#cookieWall button {
+  color: #fff;
+  cursor: pointer;
+}
+
+#cookieWall p {
+  color: #d0d0d0;
 }

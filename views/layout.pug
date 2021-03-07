@@ -14,7 +14,10 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src='/static/images/portrait.jpg',alt='The author standing on a hilltop on the Isle of Arran')
+            if dontPanic === true
+              img.thumbnail(src='/static/images/dontPanic.jpg',alt='The words "Dont Panic" in large friendly letters',title='The words "Dont Panic" in large friendly letters')
+            else
+              img.thumbnail(src='/static/images/portrait.jpg',alt='The author standing on a hilltop on the Isle of Arran',title='The author standing on a hilltop on the Isla of Arran')
           .cell.auto
 
             h5= name

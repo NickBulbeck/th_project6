@@ -1,9 +1,12 @@
 const express = require('express');
 const app = express();
-
+// const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 //
 app.set('view engine','pug');
 app.use('/static',express.static('public'));
+// app.use(bodyParser.urlencoded({extended:false})); 
+app.use(cookieParser()); 
 
 // Routes:
 const indexRoutes = require('./routes/index.js');
@@ -12,12 +15,15 @@ const projectsRoutes = require('./routes/projects.js');
 
 // Try this ....................................
 app.get('/*',(req,res,next) => {
-    const coin = Math.floor(Math.random() * 2);
-    console.log(`coin: ${coin}`);
-    if (coin > 0) {
+    console.log(req.cookies);
+    if (req.cookies.set) {
+        const now = new Date();
+        console.log(now);
+        next();
+    } else {
+        console.log("In the app.get * method: ", req.cookies.set);
         res.render('clickwall');
     }
-    next();
 })
 
 

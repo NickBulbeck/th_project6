@@ -18,7 +18,7 @@
                 "express",
                 "React",
                 "SQL",
-                "OOP",
+                "Object-oriented design",
                 "Java (but don't ask me to)",
                 "github",
                 "TDD",
@@ -36,6 +36,7 @@
             "title" : "Projects"
         },
         "layout" : {
+            "dontPanic" : false,
             "name" : "Nick Bulbeck",
             "miniBio" : "A sample of the JavaScript projects I've built whilst learning the language."
         },

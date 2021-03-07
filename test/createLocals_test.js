@@ -39,7 +39,7 @@ describe('createLocals',function() {
             expect(errorsValues[property]).to.equal(content.errors[property]);
         }
     });
-    it('should not crash if passed a  non-existent page',function() {
+    it('should not crash if passed a non-existent page',function() {
         expect(createLocals(null).name).to.equal("Nick Bulbeck");
     })
 })
