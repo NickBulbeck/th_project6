@@ -21,7 +21,6 @@ const createLocals = (page) => {
             locals[property] = pageValues[property];
         }
     }
-    console.log(locals);
     return locals;
 }
 

@@ -10,7 +10,6 @@ outputs: none
 const setDontPanic = () => {
     const layoutData = require('../data/content.json').content.layout;
     layoutData.dontPanic = true;
-    console.log(layoutData);
 }
 
 module.exports.setDontPanic = setDontPanic;
