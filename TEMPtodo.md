@@ -1,19 +1,19 @@
-So, in no real order:
+So, to refactor the cookie:
 
-- add HTML to clickwall.pug, with an opaque thing and a form in it
-- add DONTPANIC thing to layout.pug conditional on there being Douglas Adams cookie thing
-- Render clickwall.pug unconditionally if there's no cookie set (see if https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes#route_paths is any help).
-- Consider having clickwall.pug rendered translucently over the actual page if it's a real route. Might work as a called function.
+ - at the moment, if you stop and re-start the server, the cookie stays but the da boolean does not.
+ - try and re-write the code so that it checks the cookie every time...
+ - ... maybe this can be done in the app.get * route
+ - see if you can re-render the layout.pug template when the first page is loaded
 
-- Ideas: use window.onload() and client-side JS. Problem then if JavaScript disabled.
-- Main challenge is to get two buttons, not just one, in the form.
-- So, could have the Douglas Adams button set a variable.
-- In fact, yes, do this. So, we want app.js and hello.html from expressIntro
+To refactor the code design itself:
+ - create a clickwall.js file
+ - create a route for it, with a require variable and an app.use
+ - try moving the app.get* code into it
+ - try moving the app.post code into it
 
-To get started:
- - create an app.get('*',etc) - works.
- - Find the HTML for a suitable form fae one of the projects - OK.
- - Get clear on the form action - think it means the url.
- - Create a prototype pug template for the cookies form
- - Create a prototype app.post() method for the form
- - The app.post() call responds to the form.
+ To improve the cookiewall itself:
+ - style the buttons
+ - move the paragraphs and headings into the middle of the page
+
+ Possible bigly refactors:
+ - remove the layout.pug template from cookiewall, or add a standard front page

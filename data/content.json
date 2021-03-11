@@ -42,7 +42,7 @@
         },
         "error" : {
             "title" : "AAARGH! WE'RE DOOMED!",
-            "notFoundMessage" : "We tried calling that address, but nobody was in. Try clicking a link, or something like that. You probably don't need to reboot, though. Anyway, why are you still reading this? Go and do something useful!",
+            "notFoundMessage" : "We tried calling that address, but nobody was in. Try clicking a link, or something like that. You probably don't need to reboot, though. Anyway, why are you still reading this? Go and do something useful! Oops - sorry, I forgot this was meant to be a user-FRIENDLY message. My bad. So... Thanks for using my app; and have a great day!",
             "errorMessage" : "Evil has befallen the server. But don't panic; instead, count your blessings and refresh the page. Or something."
         }
     }
