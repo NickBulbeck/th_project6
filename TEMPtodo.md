@@ -1,9 +1,10 @@
 So, to refactor the cookie:
 
- - at the moment, if you stop and re-start the server, the cookie stays but the da boolean does not.
- - try and re-write the code so that it checks the cookie every time...
- - ... maybe this can be done in the app.get * route
- - see if you can re-render the layout.pug template when the first page is loaded
+ - at the moment, you have to re-start the server to reset the da flag.
+ - this needs to work from cookies.
+ - and in the non-da post code, it needs to un-set it.
+ - which needs a wee TDD'd unset function.
+ - then, in the app* thing, set it based on the cookie
 
 To refactor the code design itself:
  - create a clickwall.js file
@@ -16,4 +17,4 @@ To refactor the code design itself:
  - move the paragraphs and headings into the middle of the page
 
  Possible bigly refactors:
- - remove the layout.pug template from cookiewall, or add a standard front page
+ - remove the layout.pug template from cookiewall, or add more of a front page

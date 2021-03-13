@@ -46,21 +46,6 @@ app.use((err,req,res,next) => {
     locals.error = err;
     res.render('error',locals);
 })
-// Try this
-app.post('/',(req,res,next) => {
-    const locals = createLocals('index');
-    locals.projects = projects;
-    res.redirect('/index',locals);
-})
-app.post('/da',(req,res,next) => {
-    // do something to set cookies
-    const locals = createLocals('index');
-    locals.projects = projects;
-    res.redirect('/index',locals);
-})
-
-
-
 
 // aaaaand... GO!
 
