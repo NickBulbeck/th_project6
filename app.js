@@ -10,20 +10,21 @@ app.use(cookieParser());
 const indexRoutes = require('./routes/index.js');
 const aboutRoutes = require('./routes/about.js');
 const projectsRoutes = require('./routes/projects.js');
+const cookieRoutes = require('./routes/cookie.js');
 
 // Try this ....................................
-app.get('/*',(req,res,next) => {
-    if (req.cookies.set) {
-        next();
-    } else {
-        res.render('clickwall');
-    }
-})
+// app.get('/*',(req,res,next) => {
+//     if (req.cookies.set) {
+//         next();
+//     } else {
+//         res.render('clickwall');
+//     }
+// })
 
 
 // .............................................
 
-
+app.use(cookieRoutes);
 
 
 app.use(indexRoutes);
