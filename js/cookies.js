@@ -6,10 +6,16 @@ does:   updates the content.layout.dontPanic flag in
         Douglas Adams button in the cookie wall.
 outputs: none
 ***************************************************************/
+const layoutData = require('../data/content.json').content.layout;
 
 const setDontPanic = () => {
-    const layoutData = require('../data/content.json').content.layout;
-    layoutData.dontPanic = true;
+  layoutData.dontPanic = true;
 }
 
-module.exports.setDontPanic = setDontPanic;
+const unsetDontPanic = () => {
+  layoutData.dontPanic = false;
+}
+
+
+exports.setDontPanic = setDontPanic;
+exports.unsetDontPanic = unsetDontPanic;
