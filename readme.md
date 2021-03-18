@@ -55,3 +55,22 @@ routes themselves, for instance, which is an important ToDo! So, my test
 coverage is pretty low here, and I've mainly included it just to get the
 TDD ball rolling.
 All the tests can be run by typing npm test in the console.
+
+******************
+Cookie preferences
+******************
+I added in a cookie-preferences front page, just for a bit of fun. To be fair, 
+I'm having to be quite flexible with the definition of "fun" here, but I'm
+glad I got it working. It was this that I used to add the Douglas-Adams-themed
+easter egg.
+
+****
+ToDo
+****
+1)  Update the code in clickwall.pug so that it conditionally renders at the foot of
+    about.pug - that way, I won't have a lot of duplicate pug code! I know, I know...
+    I just needed a working proof of concept.
+2)  The error-handling bother mentioned in the comments in app.js.
+3)  Add this project itself to the list of projects that it displays, possibly
+    with some kind of note about recursion. I might even be able to incorporate
+    Russell's Paradox somehow.

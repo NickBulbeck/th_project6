@@ -8,7 +8,8 @@ router.get('/',(req,res) => {
     res.render('about',locals);
 })
 
-// artificial route designed to test the error-handling code in app.js
+// artificial route designed to test the error-handling code in app.js.
+// It's a bit of an easter-egg, but hey.
 router.get('/error',(req,res,next) => {
     const err = require('../js/createError.js').createError(500);
     next(err);

@@ -5,10 +5,38 @@ block content
     #cookieWall
       h2 Welome to my wee node app
       p
-        | This project uses cookies for your comfort and convenience. Or, actually, as a way of adding a Douglas-Adams-themed additional feature.
+        | This project uses cookies for your comfort and convenience. But mainly as a way of adding a Douglas-Adams-themed additional feature. There is no good reason for this. But, as Blaise Pascal once observed: the heart has its reasons, whereof reason knows nothing.
       h2 Privacy information
       p
         | Because this server is running locally on your own machine, it's not sending any data anywhere else. And actually the only data it stores is a record of which button you clicked. Also the national sport of TreeHouse is cricket; very few TreeHousers are aware of this because I decided it unilaterally.
       p I hope this is helpful.
       button(type='submit') I'm OK with this
       button(type='submit' formaction='/da') Douglas Adams button
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Home
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+
+        h1= name
+
+        p.lead.text-light= jobTitle
+
+        .portfolio-bio
+          p= bio
+
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6 Skills
+        ul
+          each skill of skills
+            li= skill
+        h6 Contact Info
+
+        ul
+          each contact of contacts
+            li= contact
+        each medium in media
+          a.button.expanded(href=`${medium.url}` target="_blank")= medium.name
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Home
+  

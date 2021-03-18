@@ -22,7 +22,10 @@ router.get('/*',(req,res,next) => {
     dontPanic ? setDontPanic() : unsetDontPanic(); // Finally used a ternary operator! Yay me.
     next();
   } else {
-    res.render('clickwall');
+    // get the 'about' stuff, and copy/paste in the about.pug stuff into clickwall.
+    // 
+    const locals = createLocals('about');
+    res.render('clickwall',locals);
   }
 })
 
