@@ -32,7 +32,7 @@
                 {"name" : "Twitter", "url" : "https://twitter.com/BulbeckNick"}
             ]
         },
-        "projects" : {
+        "project" : {
             "title" : "Projects"
         },
         "layout" : {

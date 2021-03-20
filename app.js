@@ -9,7 +9,7 @@ app.use(cookieParser());
 // Routes:
 const indexRoutes = require('./routes/index.js');
 const aboutRoutes = require('./routes/about.js');
-const projectsRoutes = require('./routes/projects.js');
+const projectRoutes = require('./routes/project.js');
 const cookieRoutes = require('./routes/cookie.js');
 
 
@@ -19,7 +19,7 @@ app.use(cookieRoutes);
 
 app.use(indexRoutes);
 app.use('/about',aboutRoutes);
-app.use('/projects',projectsRoutes);
+app.use('/project',projectRoutes);
 
 // Errors...
 const errorHandler = require('./js/handleErrors.js');
@@ -32,6 +32,7 @@ app.use((err,req,res,next) => {
         err.status = 500;
     }
     console.log(err.stack);
+    console.log("Message... ", err.message);
     res.status(err.status);
     let locals = require('./js/createLocals.js').createLocals('error');
     locals.error = err;
