@@ -25,11 +25,11 @@ describe('createLocals',function() {
             expect(aboutValues[property]).to.equal(content.about[property]);
         }
     });
-    it('should get the *projects* content',function() {
-        const projectsValues = createLocals('projects');
-        expect(projectsValues.name).to.equal("Nick Bulbeck");
+    it('should get the *project* content',function() {
+        const projectValues = createLocals('project');
+        expect(projectValues.name).to.equal("Nick Bulbeck");
         for (property in content.projects) {
-            expect(projectsValues[property]).to.equal(content.projects[property]);
+            expect(projectValues[property]).to.equal(content.project[property]);
         }
     });
     it('should get the *errors* content',function() {

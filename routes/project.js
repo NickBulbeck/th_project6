@@ -8,15 +8,15 @@ const create404 = require('../js/createError.js').create404;
 router.get('/:id',(req,res,next) => {
     const project = projectData[req.params.id -1];
     if (project) {
-        let locals = createLocals('projects');
+        let locals = createLocals('project');
         locals = {
             ...locals,
             ...project
         };
-        res.render('projects',locals);
+        res.render('project',locals);
     } else {
         let locals = createLocals('error');
-        const url = `${req.get('host')}/projects${req.url}`;
+        const url = `${req.get('host')}/project${req.url}`;
         let error = create404();
         console.log(error);
         locals.error = error;

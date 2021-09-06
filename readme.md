@@ -9,7 +9,14 @@ basic minimum of stylistic changes for the Exceeds Expectations rubric:
  - Added the colour to the article background
  - Added box shading to the image links on the home page;
  - Added a transition to the box-shading.
- So, there you are.
+One more change is textual. In links to the index page (or '/'), I've 
+replaced 'Back' with 'Home'; this is a clearer UX (and it's not a true
+'back'-button anyway).
+
+So, there you are.
+
+
+
 
 Other matters of interest and general excitement:
 
