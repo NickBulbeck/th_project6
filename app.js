@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
+const port = process.env.PORT || 3000;
 //
 app.set('view engine','pug');
 app.use('/static',express.static('public'));
@@ -41,6 +42,6 @@ app.use((err,req,res,next) => {
 
 // aaaaand... GO!
 
-app.listen(3000,() => {
-    console.log("The app is running on port 3000");
+app.listen(port,() => {
+    console.log(`The app is running on port ${port}`);
 });
