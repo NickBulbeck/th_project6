@@ -19,6 +19,9 @@
     "express",
     "node"
   ],
+  "engines": {
+    "node" : "16.0.0"
+  },
   "author": "Nick Bulbeck",
   "license": "ISC",
   "bugs": {
